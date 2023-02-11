@@ -14,8 +14,8 @@ pipelien {
         stage('send_email'){
             steps{
                 script{
-                    emailext body: "${CONTENT}"
-                    subject: "ceshi jenkins"
+                    emailext body: "${CONTENT}",
+                    subject: "ceshi jenkins",
                         to: "${EMAIL_RECIPIENTS}", from: "${SENDER}"
                 }
             }
