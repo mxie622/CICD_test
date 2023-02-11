@@ -1,4 +1,4 @@
-pipelien {
+pipeline {
     agent {
         node ('JENKINS_SLAVE && JENKINS_USER')
     }
